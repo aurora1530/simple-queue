@@ -1,0 +1,10 @@
+{
+  "name": "simple-queue",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "tsx": "^4.11.2",
+    "typescript": "^5.4.5"
+  }
+}
