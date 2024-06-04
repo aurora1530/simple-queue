@@ -1,7 +1,14 @@
 {
   "name": "simple-queue",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepare": "yarn build"
+  },
   "license": "MIT",
   "devDependencies": {
     "@types/jest": "^29.5.12",
