@@ -33,6 +33,17 @@ export class Queue<T> {
     return value;
   }
 
+  includes(value: T): boolean {
+    let current = this.#head;
+    while (current !== null) {
+      if (current.value === value) {
+        return true;
+      }
+      current = current.next;
+    }
+    return false;
+  }
+
   get size(): number {
     return this.#size;
   }

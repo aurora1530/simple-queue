@@ -36,4 +36,13 @@ describe('Queue', () => {
     queue.dequeue();
     expect(queue.isEmpty).toBe(true);
   });
+
+  test('includes', () => {
+    queue.enqueue(1);
+    queue.enqueue(3);
+
+    expect(queue.includes(1)).toBe(true);
+    expect(queue.includes(3)).toBe(true);
+    expect(queue.includes(4)).toBe(false);
+  });
 });
